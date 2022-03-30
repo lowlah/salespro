@@ -1,20 +1,16 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header{
-    /*background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(image.jpg);
-    /*background-image: linear-gradient ( rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
-    url(image.jpg);*/
     height: 100vh;
-    background-position: center;
-    background-size: cover;
-   
+    
 } 
 
 .background-img{
-    background-image:url(image.jpg);
+    background-image:url('image.jpg');
 
     /*background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));*/
     background-position: center;
@@ -44,6 +40,19 @@ h1{
     font-size: 3.75rem;
     letter-spacing: 0.94rem;
     margin-top: 1rem;
+
+    background-size: 100%;
+    /*-webkit-text-fill-color: white;*/
+    background-color: #fff;
+    background-image: linear-gradient(315deg, #d7e1ec 0%, #fff 64%);
+    font-weight: bolder;
+
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
 }
 
 
@@ -58,26 +67,35 @@ p{
     margin-bottom: 2rem;
 }
 
-.typewriter-txt {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #04738C; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+/*.typewriter-txt {
+   overflow: hidden; /* Ensures the content is not revealed until the animation 
+    border-right: .15em solid #04738C; /* The typwriter cursor 
+    white-space: nowrap; /* Keeps the content on a single line 
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens 
+    letter-spacing: .15em; /* Adjust as needed 
     animation: 
       typing 4.0s steps(40, end),
       blink-caret .90s step-end infinite;
   }
   
-  /* The typing effect */
+  /* The typing effect 
   @keyframes typing {
     from { width: 0 }
     to { width: 100% }
   }
   
-  /* The typewriter cursor effect */
+  /* The typewriter cursor effect 
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: #04738C; }
   }
   
+  @media screen and (min-width: 767px){
+      
+
+      .hero{
+          padding: 20;
+      }
+
+  }
+  */
